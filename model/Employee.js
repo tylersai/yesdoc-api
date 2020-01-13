@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
 
 const EmployeeSchema = mongoose.Schema({
-    name: {
-        type: String,
-        required: true
-    },
     memberId: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    name: {
         type: String,
         required: true
     },
@@ -14,4 +15,4 @@ const EmployeeSchema = mongoose.Schema({
     employerName: String
 });
 
-module.exports = mongoose.model('employee', EmployeeSchema);
+module.exports = mongoose.model('Employee', EmployeeSchema, 'employee');
