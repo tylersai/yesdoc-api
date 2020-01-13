@@ -1,0 +1,23 @@
+{
+  "name": "yesdoc-api",
+  "version": "1.0.0",
+  "description": "Yes Doctor Platform for Employee Healthcare Benefits, Claims, Credits and other Details",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/thesaihan/yesdoc-api.git"
+  },
+  "author": "Sai Han",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thesaihan/yesdoc-api/issues"
+  },
+  "homepage": "https://github.com/thesaihan/yesdoc-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
