@@ -7,6 +7,8 @@ const cors = require('cors');
 // Middleware
 app.use(cors());
 
-app.get('/', (req, res) => res.send('Hello World!'));
+// Router
+const employeeController = require('./controller/EmployeeController');
+app.use('/employee', employeeController);
 
 app.listen(port, () => console.log(`Listening on port ${port}!`));
