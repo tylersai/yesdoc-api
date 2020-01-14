@@ -12,7 +12,8 @@ const EmployeeSchema = mongoose.Schema({
     },
     dateOfBirth: Date,
     address: String,
-    employerName: String
+    employerName: String,
+    credits: Number
 });
 
-module.exports = mongoose.model('Employee', EmployeeSchema, 'employee');
+module.exports = mongoose.model('employee', EmployeeSchema, 'employee');

@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const port = 2000;
 
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -22,4 +21,5 @@ mongoose.connect(
   () => console.log("Connected to MongoDB!")
 );
 
+const port = process.env.PORT;
 app.listen(port, () => console.log(`Listening on port ${port}!`));
