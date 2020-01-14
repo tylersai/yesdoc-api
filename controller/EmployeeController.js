@@ -77,13 +77,12 @@ employeeRouter.patch("/:id", async (req, res) => {
 
 employeeRouter.post("/transact/:id", async (req, res) => {
   try {
-    const ret = await Employee.update({
+    const ret = await Employee.updateOne({
       _id : req.params.id
     },{
       $inc : { credits: req.body.amount }
     });
-    console.log(ret);
-    res.json(formatDate(ret));
+    res.json(ret);
   } catch (error) {
     console.log(error);
     res.json({});
