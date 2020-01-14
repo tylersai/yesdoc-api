@@ -12,6 +12,8 @@ app.use(bodyParser.json());
 // Router
 const employeeController = require("./controller/EmployeeController");
 app.use("/employee", employeeController);
+const transController = require("./controller/TransactionController");
+app.use("/transaction", transController);
 
 // Database
 const mongoose = require("mongoose");
