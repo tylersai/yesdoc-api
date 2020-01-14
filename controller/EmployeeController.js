@@ -75,4 +75,19 @@ employeeRouter.patch("/:id", async (req, res) => {
   }
 });
 
+employeeRouter.post("/transact/:id", async (req, res) => {
+  try {
+    const ret = await Employee.update({
+      _id : req.params.id
+    },{
+      $inc : { credits: req.body.amount }
+    });
+    console.log(ret);
+    res.json(formatDate(ret));
+  } catch (error) {
+    console.log(error);
+    res.json({});
+  }
+});
+
 module.exports = employeeRouter;
