@@ -49,7 +49,7 @@ employeeRouter.get("/:id", async (req, res) => {
 
 employeeRouter.delete("/:id", async (req, res) => {
   try {
-    const ret = await Employee.findByIdAndDelete(req.params.id);
+    const ret = await Employee.findByIdAndDelete(req.params.id, {useFindAndModify:false});
     res.json(ret);
   } catch (error) {
     console.log(error);
@@ -67,7 +67,7 @@ employeeRouter.patch("/:id", async (req, res) => {
         employerName: req.body.employerName,
         memberId: req.body.memberId,
       }
-    });
+    }, {useFindAndModify:false});
     res.json(formatDate(ret));
   } catch (error) {
     console.log(error);
