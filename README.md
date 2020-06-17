@@ -4,7 +4,9 @@ healthcare benefits, claims, credits and other details. The idea of the platform
 which is the employee to have quick access to their benefits which is mostly credits given by the
 employer and use them for clinic consultations. This aside from being able to book
 appointments and find nearby clinics.<br/>
-This is a backend RESTful API project for Yes Doctor Platform using Express framework of NodeJS
+This is a backend RESTful API project for Yes Doctor Platform using Express framework of NodeJS.<br/>
+For live production, please visit [http://yesdoc.netlify.com](http://yesdoc.netlify.com)<br/>
+For frontend React repo, please visit [https://github.com/thesaihan/yesdoc](https://github.com/thesaihan/yesdoc)
 <br/>
 ## Configuration
 Using `npm`'s `dotenv` package, create an environment variable file named `.env` and set up these two variables : <br/>
