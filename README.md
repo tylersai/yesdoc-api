@@ -5,7 +5,7 @@ which is the employee to have quick access to their benefits which is mostly cre
 employer and use them for clinic consultations. This aside from being able to book
 appointments and find nearby clinics.<br/>
 This is a backend RESTful API project for Yes Doctor Platform using Express framework of NodeJS.<br/>
-For live production, please visit [http://yesdoc.netlify.com](http://yesdoc.netlify.com)<br/>
+For live production, please visit [http://yesdoc.netlify.app](http://yesdoc.netlify.app)<br/>
 For frontend React repo, please visit [https://github.com/thesaihan/yesdoc](https://github.com/thesaihan/yesdoc)
 <br/>
 ## Configuration
