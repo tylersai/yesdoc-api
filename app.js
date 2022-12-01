@@ -23,6 +23,8 @@ const employeeController = require("./controller/EmployeeController");
 app.use("/employee", employeeController);
 const transController = require("./controller/TransactionController");
 app.use("/transaction", transController);
+const ticketController = require("./controller/TicketController");
+app.use("/ticket", ticketController);
 
 // Database
 const mongoose = require("mongoose");
